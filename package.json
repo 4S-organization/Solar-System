@@ -1,0 +1,24 @@
+{
+  "name": "Solar-System",
+  "version": "1.0.0",
+  "description": "",
+  "main": "sketch.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/4S-organization/Solar-System.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/4S-organization/Solar-System/issues"
+  },
+  "homepage": "https://github.com/4S-organization/Solar-System#readme",
+  "dependencies": {
+    "canvas-sketch": "^0.7.4",
+    "three": "^0.123.0"
+  }
+}
