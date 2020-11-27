@@ -182,6 +182,22 @@ function createSpotlights(scene) {
     );
     scene.add( spotlight );
   });
+
+
+  getPlanetsData('Earth');
+
+
+  function getPlanetsData(planet) {
+    var xmlHttpRequest = new XMLHttpRequest();
+
+    xmlHttpRequest.open('GET', 'https://api.le-systeme-solaire.net/rest/bodies/' + planet, false);
+    xmlHttpRequest.send();
+    
+    var data = xmlHttpRequest.responseText;
+
+    var perihelion = JSON.parse(data)['perihelion'];
+    console.log(perihelion);
+  }
 }
 
 canvasSketch(sketch, settings);
